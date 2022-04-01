@@ -1,0 +1,198 @@
+body{
+    font-family: poppins;
+    background: url(../grafika/tła/tlostrony.png);
+    text-align: center;
+}
+
+button{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.5s;
+  }
+  button:first-child:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+  button:last-child:hover{
+    background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400%;
+  }
+  button:first-child:before,
+  button:last-child:before{
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  button:first-child:hover:before,
+  button:last-child:hover:before{
+    opacity: 1;
+    z-index: -1;
+  }
+  button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+  @keyframes glow {
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+.dc {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    background: #d40000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d40000), to(#000000));
+    background: -moz-linear-gradient(top, #d40000, #000000);
+    background: linear-gradient(to bottom, #d40000, #000000);
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.dc:hover,
+.dc:focus {
+    background: #fe0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fe0000), to(#000000));
+    background: -moz-linear-gradient(top, #fe0000, #000000);
+    background: linear-gradient(to bottom, #fe0000, #000000);
+    color: #ffffff;
+    text-decoration: none;
+}
+.dc:active {
+    background: #7f0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7f0000), to(#000000));
+    background: -moz-linear-gradient(top, #7f0000, #000000);
+    background: linear-gradient(to bottom, #7f0000, #000000);
+}
+.dc:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABx0lEQVRIib3VT0tUYRTH8c8zikS0aCWziIz+IUFUEL2AEF9FtPB6iza18DW0DFctmnF8CxEEQUSEoLSKCCqRiIghIqRahIjknBYz0nCdO+qY/VbPPefc35fnPs85lwNWKgbyLCqJQwO5DVmv1VKrFJBnMYEHqA4E4Ctu1hvp2VZguFDQwPEBzeFkx2NsK1ApFOzHvKdHEfDPtVvAN3zvev6JL2j1Lv+r4hkU9QGz2oc33AG1MCpsSA5jBpcHBeTB0lwjbfRMTsWI5BXelnn1+0TvEgtl5lCfTxv1RlrB87Kafjt4XGu0mybPYhxVFS9SqESYDD7NNdJyp/YhJvcKWOxaP8JpLWeifdefJD7iFAhL22fCzoDlrvV9nEcTv/EGC135lTKTckC0r2U+FWeFWn0+rXcyn3HhxnRUprM4FyynIeux6ReO7B6Q3MuzuCU0JbfzLC7hfWcHYxFWU5hFJTbd7WXeH8B1TEqe4grGC/mmpJq4ihNlJjv1QbUD6qVjmNrh/f8/i1YH8Hipz0wqAmawtkfAa9wpg2xrj+ksjiZGI3bnnlirz6dmnsU17Z/NSL2RStpun8qzmMiz+HEg5l2QiwcKKOoPI7iC5QSAMzUAAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+ /*banner area*/
+  
+ section {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-width:1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
+@media (max-width:600px) {
+    section {
+        padding: 125px 30px;
+    }
+}
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+.banner-area {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.banner-area .banner-img {
+    background-image: url(../grafika/tła/tlo.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+.banner-area .banner-img:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .8;
+}
+.banner-area h1 {
+    margin-bottom: 15px;
+    font-size: 65px;
+    font-family: merienda;
+}
+.banner-area h3 {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.banner-area a.banner-btn {
+    padding: 15px 35px;
+    background: crimson;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+@media (max-width:800px) {
+    .banner-area {
+        min-height: 600px;
+    }
+    .banner-area h1 {
+        font-size: 32px;
+    }
+    .banner-area h3 {
+        font-size: 20px;
+    }
+    .banner-area a.banner-btn {
+        padding: 15px 40px;
+    }
+}
