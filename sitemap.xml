@@ -1,7 +1,21 @@
-<?xml version='1.0' encoding='UTF-8'?>
-
-<urlset xmlns="http://www.sitemaps.org/scheams/sitemap/0.9">
-    <url>
-        <loc>https://skteam.ga</loc>
-        <lastmod>2022-06-04</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+      <loc>https://skaylus.ga/oloszenia</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>https://skaylus.ga/kody</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>https://skaylus.ga/</loc>
+      <lastmod>2005-01-01</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+</url>
+</urlset>
